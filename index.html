@@ -2,36 +2,35 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>Mon Portfolio</title>
     <style>
         body {
-            font-family: sans-serif;
+            font-family: Arial, sans-serif;
             text-align: center;
-            padding-top: 50px;
+            padding-top: 100px;
+            background-color: #f9f9f9;
         }
-        ul {
-            list-style: none; /* Enlève les puces */
-            padding: 0;
-        }
-        li {
-            margin: 15px 0; /* Espace entre les TP */
-        }
+        h1 { color: #333; }
+        .links { margin-top: 30px; }
         a {
+            display: block; /* Met les liens les uns sous les autres */
+            margin: 10px;
             text-decoration: none;
-            color: blue;
+            color: #007bff;
             font-size: 20px;
         }
+        a:hover { font-weight: bold; }
     </style>
 </head>
 <body>
 
     <h1>Portfolio</h1>
 
-    <ul>
-        <li><a href="TP-3/index.html">TP1</a></li>
-        <li><a href="TP-4/index.html">TP2</a></li>
-        <li><a href="TP-5/index.html">TP3</a></li>
-    </ul>
+    <div class="links">
+        <a href="TP-3/index.html">TP1</a>
+        <a href="TP-4/index.html">TP2</a>
+        <a href="TP-5/index.html">TP3</a>
+    </div>
 
 </body>
 </html>
