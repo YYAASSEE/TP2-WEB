@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP3 - HTML/CSS - Yacine LAHRECHE</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: auto; padding: 20px; }
+        h1 { text-align: center; color: #2c3e50; border-bottom: 2px solid #2c3e50; }
+        h2 { background-color: #ecf0f1; padding: 10px; border-left: 5px solid #2980b9; margin-top: 40px; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { border: 1px solid #bdc3c7; padding: 12px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .cv-header { text-align: center; background: #34495e; color: white; padding: 20px; border-radius: 8px; }
+        blockquote { font-style: italic; border-left: 3px solid #ccc; margin: 10px 0; padding-left: 15px; }
+        hr { margin: 40px 0; border: 0; border-top: 1px dashed #888; }
+    </style>
+</head>
+<body>
+
+    <h1>TP3 : Utilisation des balises "Conteneurs Texte" [cite: 6]</h1>
+
+    <section>
+        <h2>Exercice 1 : Mémento HTML5 [cite: 7]</h2>
+        <p>Observation de la structure sémantique via l'inspecteur d'élément[cite: 9, 10].</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Balise</th>
+                    <th>Rôle </th>
+                    <th>Exemple </th>
+                    <th>Aperçu </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>&lt;h1&gt;</code></td>
+                    <td>Titre principal de la page.</td>
+                    <td><code>&lt;h1&gt;Titre&lt;/h1&gt;</code></td>
+                    <td><strong>Titre</strong></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;p&gt;</code></td>
+                    <td>Définit un paragraphe de texte.</td>
+                    <td><code>&lt;p&gt;Texte&lt;/p&gt;</code></td>
+                    <td>Texte</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;ul&gt;</code> / <code>&lt;li&gt;</code></td>
+                    <td>Liste non ordonnée (à puces).</td>
+                    <td><code>&lt;li&gt;Item&lt;/li&gt;</code></td>
+                    <td>• Item</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;blockquote&gt;</code></td>
+                    <td>Citation de source externe.</td>
+                    <td><code>&lt;blockquote&gt;...&lt;/blockquote&gt;</code></td>
+                    <td><blockquote>Citation</blockquote></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;mark&gt;</code></td>
+                    <td>Surlignage visuel.</td>
+                    <td><code>&lt;mark&gt;Important&lt;/mark&gt;</code></td>
+                    <td><mark>Important</mark></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Exercice 2 : Structuration SQL [cite: 14]</h2>
+        
+        <h1>1. Le langage SQL [cite: 18]</h1>
+        <h2>1.1. Définition [cite: 19]</h2>
+        <p>Le langage SQL (Structured Query Language) est un langage comprenant à lui seul l'ensemble des ordres nécessaires à la gestion d'une base de données relationnelle[cite: 20]. Il a été créé en 1986[cite: 21].</p>
+        
+        <h2>1.2. Les différentes normes utilisées [cite: 23]</h2>
+        <p>Il existe aujourd'hui plusieurs normes relatives à l'utilisation du langage SQL[cite: 24]:</p>
+        <ul>
+            <li>La norme SQL 89[cite: 26].</li>
+            <li>La norme SQL 92[cite: 27].</li>
+            <li>Aujourd'hui SQL 2011[cite: 28].</li>
+        </ul>
+        <p>Citation de PostgreSQL :</p>
+        <blockquote>
+            "Le développement de PostgreSQL™ respecte le standard en vigueur..." [cite: 30]
+        </blockquote>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Exercice 3 : Mon CV en HTML [cite: 39]</h2>
+        <div class="cv-header">
+            <h1>Yacine LAHRECHE [cite: 43]</h1>
+            <p>ylahreche07@gmail.com | 0749644975 [cite: 47, 48]</p>
+            <p>Valence (26000) | Permis B [cite: 49, 50]</p>
+        </div>
+
+        <h3>Profil [cite: 44]</h3>
+        <p>Actuellement en cours de formation en BTS SIO, je développe une expertise technique complétée par la rigueur scientifique de mon baccalauréat (Maths/NSI)[cite: 51].</p>
+
+        <h3>Formation [cite: 53]</h3>
+        <ul>
+            <li><strong>BTS SIO</strong> - Algoud Laffemas, Valence (2025 - Présent) [cite: 54]</li>
+            <li><strong>Baccalauréat Général (MATHS/NSI)</strong> - Jules Froment, Aubenas (2023 - 2025) [cite: 54]</li>
+            <li><strong>Diplôme National du Brevet</strong> - Largentière [cite: 54]</li>
+        </ul>
+
+        <h3>Compétences [cite: 56]</h3>
+        <ul>
+            <li>Python, JAVA, HTML/CSS [cite: 58, 59, 60]</li>
+            <li>Gestion de base de données (SQL) [cite: 61]</li>
+            <li>Maîtrise Microsoft Office [cite: 62]</li>
+        </ul>
+
+        <h3>Centres d'intérêt [cite: 69]</h3>
+        <p>RUGBY / BOXE : Vice-champion Auvergne Rhône-Alpes Kick boxing 2021[cite: 70, 71].</p>
+    </section>
+
+</body>
+</html>
