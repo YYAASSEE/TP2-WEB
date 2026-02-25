@@ -3,30 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Accueil - Prog Web</title>
+    <title>Prog Web - Bloc 1</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>COURS PROG WEB - BLOC 1</h1>
-    
-    <div class="images-container">
-        <a href="Docs/cours_HTML.html"><img src="Image/html.png" alt="Cours HTML" width="74" height="60"></a>
-        <a href="Docs/cours_CSS.html"><img src="Image/css.png" alt="Cours CSS" width="74" height="60"></a>
-        <a href="Docs/cours_JS.html"><img src="Image/js.png" alt="Cours JS" width="74" height="60"></a>
+
+    <div class="container">
+        <header>
+            <h1>PROG WEB</h1>
+            <p>BTS SIO - Bloc 1</p>
+        </header>
+
+        <div class="images-container">
+            <a href="Docs/cours_HTML.html" class="card">
+                <img src="Image/html.png" alt="HTML">
+                HTML
+            </a>
+            <a href="Docs/cours_CSS.html" class="card">
+                <img src="Image/css.png" alt="CSS">
+                CSS
+            </a>
+            <a href="Docs/cours_JS.html" class="card">
+                <img src="Image/js.png" alt="JavaScript">
+                JS
+            </a>
+        </div>
+
+        <div class="description">
+            <h2>À propos</h2>
+            <p>Bienvenue sur l'espace centralisé du cours de Programmation Web. Ce site regroupe l'ensemble des notions, des fiches de synthèse et des travaux pratiques pour maîtriser HTML5, CSS3 et JavaScript.</p>
+        </div>
     </div>
 
-    <div class="description">
-        <p>Descriptif du cours : Ce site regroupe l'ensemble des cours et travaux pratiques concernant les langages de programmation Web (HTML, CSS et JavaScript) étudiés dans le cadre du BTS SIO.</p>
-    </div>
-
-    <div class="sommaire-accueil">
-        <ol>
-            <li><a href="Docs/cours_HTML.html">COURS ET TP HTML</a></li>
-            <li><a href="Docs/cours_CSS.html">COURS ET TP CSS</a></li>
-            <li><a href="Docs/cours_JS.html">COURS ET TP JS</a></li>
-        </ol>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
