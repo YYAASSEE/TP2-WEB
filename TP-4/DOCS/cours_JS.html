@@ -1,36 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Cours JS</title>
-    <link rel="stylesheet" href="../Style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours et TP JS</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <a href="../index.html">Retour Accueil</a>
     <h1>COURS ET TP JS</h1>
-    <img src="../Image/js.png" width="74" height="60">
+    <img src="../Image/js.png" alt="JS Logo" width="74" height="60">
+    
+    <p>
+        <a href="../index.html" class="lien-retour">Retour Accueil</a> | 
+        <a href="javascript:history.back()" class="lien-retour">Page précédente</a>
+    </p>
 
-    <div id="sommaire">
-        <h2>Sommaire</h2>
-        <ul>
-            <li><a href="#definition">1. Définition</a></li>
-            <li><a href="#concepts">2. Les concepts</a></li>
-        </ul>
+    <div class="menu-lateral">
+        <h3>Liste des cours</h3>
+        <ol>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#variables">Les variables</a></li>
+            <li><a href="#bases">Les bases du JS</a></li>
+        </ol>
+        <h3>TP</h3>
+        <ol>
+            <li>TP1</li>
+            <li>TP2</li>
+        </ol>
     </div>
 
-    <h2 id="definition">1. Définition</h2>
-    <p>Le JavaScript est un langage de programmation qui permet de rendre les pages web interactives (boutons, calculs, animations).</p>
-    <a href="#sommaire">Remonter au sommaire</a>
-
-    <h2 id="concepts">2. Les concepts</h2>
-    <h3>2.1 Le but de l'algorithmique</h3>
-    <p>L'algorithmique permet de définir les étapes pour résoudre un problème avant de le coder.</p>
-    <code>let x = 10;</code>
-    <br><br>
-    <a href="#sommaire">Remonter au sommaire</a>
+    <h2 id="sommaire">Sommaire du cours</h2>
+    <ul>
+        <li><a href="#structure">1. La structure de base</a></li>
+        <li><a href="#commentaires">2. Les commentaires</a></li>
+    </ul>
 
     <hr>
-    <p>Auteur : S. GIBERT</p>
-    <a href="mailto:s.gibert@lycee.fr?subject=Cours JS">Contacter l'auteur</a>
+
+    <h2 id="structure">1. La structure de base d'un programme en JavaScript</h2>
+    <p>Lorsque le code JavaScript se trouve dans un fichier séparé, la structure générale est relativement simple.</p>
+    <code>
+        /* zone d'en-tête */<br>
+        /* déclaration des variables globales */<br>
+        let Declaration1;<br>
+        /* CORPS DU PROGRAMME */<br>
+        Instruction1;
+    </code>
+    <p><a href="#sommaire" class="lien-retour">Retour Sommaire</a> | <a href="#bas-de-page" class="lien-retour">Aller en bas</a></p>
+
+    <h2 id="commentaires">2. Les commentaires</h2>
+    <h3>2.1 Utilité</h3>
+    <p>Les commentaires permettent une relecture de programme pour le développeur et son équipe.</p>
+    <h3>2.2 Syntaxe</h3>
+    <p>Utilisez <code>//</code> pour une ligne et <code>/* ... */</code> pour plusieurs lignes.</p>
+    <p><a href="#sommaire" class="lien-retour">Retour Sommaire</a> | <a href="#bas-de-page" class="lien-retour">Aller en bas</a></p>
+
+    <hr id="bas-de-page">
+    <p><a href="../index.html" class="lien-retour">Retour Accueil</a></p>
+    <p><a href="../Cours3_Les_bases_JS.pdf" download>Télécharger le cours (PDF)</a></p>
+    <p><a href="mailto:prof@algoud-laffemas.fr?subject=Cours%20et%20TP%20JS">Une question ? Envoyer un mail à l'auteur</a></p>
+
 </body>
 </html>

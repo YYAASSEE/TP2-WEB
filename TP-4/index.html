@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Accueil - Mon TP</title>
-    <link rel="stylesheet" href="Style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Accueil - Prog Web</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>MON PREMIER SITE WEB</h1>
+    <h1>COURS PROG WEB - BLOC 1</h1>
+    
+    <div class="images-container">
+        <a href="Docs/cours_HTML.html"><img src="Image/html.png" alt="Cours HTML" width="74" height="60"></a>
+        <a href="Docs/cours_CSS.html"><img src="Image/css.png" alt="Cours CSS" width="74" height="60"></a>
+        <a href="Docs/cours_JS.html"><img src="Image/js.png" alt="Cours JS" width="74" height="60"></a>
+    </div>
 
-    <a href="Docs/cours_HTML.html"><img src="Image/html.png" width="74" height="60" alt="HTML"></a>
-    <a href="Docs/cours_CSS.html"><img src="Image/css.png" width="74" height="60" alt="CSS"></a>
-    <a href="Docs/cours_JS.html"><img src="Image/js.png" width="74" height="60" alt="JS"></a>
+    <div class="description">
+        <p>Descriptif du cours : Ce site regroupe l'ensemble des cours et travaux pratiques concernant les langages de programmation Web (HTML, CSS et JavaScript) étudiés dans le cadre du BTS SIO.</p>
+    </div>
 
-    <p>Ceci est le descriptif de mon cours pour le BTS SIO.</p>
+    <div class="sommaire-accueil">
+        <ol>
+            <li><a href="Docs/cours_HTML.html">COURS ET TP HTML</a></li>
+            <li><a href="Docs/cours_CSS.html">COURS ET TP CSS</a></li>
+            <li><a href="Docs/cours_JS.html">COURS ET TP JS</a></li>
+        </ol>
+    </div>
 
-    <ol>
-        <li><a href="Docs/cours_HTML.html">COURS ET TP HTML</a></li>
-        <li><a href="Docs/cours_CSS.html">COURS ET TP CSS</a></li>
-        <li><a href="Docs/cours_JS.html">COURS ET TP JS</a></li>
-    </ol>
-
-    <p>Auteur : S. GIBERT</p>
+    <script src="script.js"></script>
 </body>
 </html>
