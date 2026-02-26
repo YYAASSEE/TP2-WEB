@@ -2,17 +2,329 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>TP - Les Tableaux</title>
-    <link rel="stylesheet" href="style..css">
+    <title>TP6 - Les Tableaux</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --bg-main: #121212;
+            --bg-card: #1e1e1e;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --border-color: #333333;
+            --accent-orange: #ff9800;
+            --accent-blue: #2196f3;
+            --accent-green: #4caf50;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            line-height: 1.6;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #5c5c5c;
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        caption {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #bb86fc;
+            margin-bottom: 15px;
+            text-align: left;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        tbody tr:hover td {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        a {
+            color: #64b5f6;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #90caf9;
+            text-decoration: underline;
+        }
+
+        img {
+            transition: transform 0.3s ease;
+            filter: drop-shadow(0 0 2px rgba(255,255,255,0.2));
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        code {
+            background-color: #2d2d2d;
+            color: #ff8a65;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+
+        .txt-center { text-align: center; }
+        .txt-white { color: #ffffff; }
+        .bold { font-weight: 600; color: #ffffff; }
+        .table-header { 
+            background-color: #272727; 
+            color: #ffffff; 
+            text-transform: uppercase; 
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        .bg-dark-grey { background-color: #2c2c2c; }
+        .bg-light-grey { background-color: #252525; color: #cccccc; }
+        
+        .bg-orange { background-color: var(--accent-orange); color: #121212; }
+        .bg-blue { background-color: var(--accent-blue); color: #121212; }
+        .bg-green { background-color: var(--accent-green); color: #121212; }
+
+        .bg-light-orange { background-color: rgba(255, 152, 0, 0.1); }
+        .bg-light-blue { background-color: rgba(33, 150, 243, 0.1); }
+        .bg-light-green { background-color: rgba(76, 175, 80, 0.1); }
+
+        .calendrier td {
+            text-align: center;
+            width: 14.28%;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+        .calendrier td:hover:not(:empty) {
+            background-color: #bb86fc;
+            color: #121212;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
-    <h1>TP - Utilisation des balises : tableau, image et lien</h1>
-    <nav>
-        <ul>
-            <li><a href="calen-sco">Exercice 1 : Calendrier Scolaire</a></li>
-            <li><a href="script-serv">Exercice 2 : Langages de script côté serveur</a></li>
-            <li><a href="04-2024">Exercice 3 : Calendrier Avril 2024</a></li>
-        </ul>
-    </nav>
+
+    <h2>Exercice 1</h2>
+    <table>
+        <thead>
+            <tr>
+                <th class="bg-dark-grey txt-white txt-center" rowspan="2">Vacances</th>
+                <th class="bg-orange txt-white txt-center">Zone A</th>
+                <th class="bg-blue txt-white txt-center">Zone B</th>
+                <th class="bg-green txt-white txt-center">Zone C</th>
+            </tr>
+            <tr>
+                <td class="bg-light-orange txt-center" style="font-size: 11px;">
+                    <span class="bold">Académies :</span><br>
+                    Besançon, Bordeaux,<br>Clermont-Ferrand, Dijon,<br>Grenoble, Limoges, Lyon,<br>Poitiers
+                </td>
+                <td class="bg-light-blue txt-center" style="font-size: 11px;">
+                    <span class="bold">Académies :</span><br>
+                    Aix-Marseille, Amiens,<br>Caen, Lille, Nancy-Metz,<br>Nantes, Nice, Orléans-<br>Tours, Reims, Rennes,<br>Rouen, Strasbourg
+                </td>
+                <td class="bg-light-green txt-center" style="font-size: 11px;">
+                    <span class="bold">Académies :</span><br>
+                    Créteil, Montpellier, Paris,<br>Toulouse, Versailles
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="bg-light-grey bold">Prérentrée des<br>enseignants</td>
+                <td colspan="3" class="txt-center">Reprise des cours : vendredi 1er septembre 2017</td>
+            </tr>
+            <tr>
+                <td class="bg-light-grey bold">Rentrée scolaire des<br>élèves</td>
+                <td colspan="3" class="txt-center">Reprise des cours : lundi 4 septembre 2017</td>
+            </tr>
+            <tr>
+                <td class="bg-light-grey bold">Vacances de la<br>Toussaint</td>
+                <td colspan="3" class="txt-center">Fin des cours : samedi 21 octobre 2017<br>Reprise des cours : lundi 6 novembre 2017</td>
+            </tr>
+            <tr>
+                <td class="bg-light-grey bold">Vacances de Noël</td>
+                <td colspan="3" class="txt-center">Fin des cours : samedi 23 décembre 2017<br>Reprise des cours : lundi 8 janvier 2018</td>
+            </tr>
+            <tr>
+                <td class="bg-light-grey bold">Vacances d'hiver</td>
+                <td class="bg-light-orange txt-center">Fin des cours :<br>samedi 10 février 2018<br>Reprise des cours :<br>lundi 26 février 2018</td>
+                <td class="bg-light-blue txt-center">Fin des cours :<br>samedi 24 février 2018<br>Reprise des cours :<br>lundi 12 mars 2018</td>
+                <td class="bg-light-green txt-center">Fin des cours :<br>samedi 17 février 2018<br>Reprise des cours :<br>lundi 5 mars 2018</td>
+            </tr>
+            <tr>
+                <td class="bg-light-grey bold">Vacances de<br>printemps</td>
+                <td class="bg-light-orange txt-center">Fin des cours :<br>samedi 7 avril 2018<br>Reprise des cours :<br>lundi 23 avril 2018</td>
+                <td class="bg-light-blue txt-center">Fin des cours :<br>samedi 21 avril 2018<br>Reprise des cours :<br>lundi 7 mai 2018</td>
+                <td class="bg-light-green txt-center">Fin des cours :<br>samedi 14 avril 2018<br>Reprise des cours :<br>lundi 30 avril 2018</td>
+            </tr>
+            <tr>
+                <td class="bg-light-grey bold">Vacances d'été</td>
+                <td colspan="3" class="txt-center">Fin des cours : samedi 7 juillet 2018</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Exercice 2</h2>
+    <table>
+        <caption>Langages de script côté serveur</caption>
+        <thead>
+            <tr>
+                <th class="table-header">Logo</th>
+                <th class="table-header">Nom abrégé</th>
+                <th class="table-header">Nom complet</th>
+                <th class="table-header">Année de sortie</th>
+                <th class="table-header">Site web de référence</th>
+                <th class="table-header">Exemple de code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="txt-center" title="Logo PHP">
+                    <a href="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" width="50" alt="PHP">
+                    </a>
+                </td>
+                <td class="txt-center">PHP</td>
+                <td class="txt-center">Hypertext Preprocessor</td>
+                <td class="txt-center">1995</td>
+                <td class="txt-center" title="Aller sur le site officiel de PHP">
+                    <a href="https://www.php.net" target="_blank">php.net</a>
+                </td>
+                <td><code>echo "Hello World";</code></td>
+            </tr>
+            <tr>
+                <td class="txt-center" title="Logo JSP">
+                    <a href="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/120px-Java_programming_language_logo.svg.png" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/120px-Java_programming_language_logo.svg.png" width="30" alt="JSP">
+                    </a>
+                </td>
+                <td class="txt-center">JSP</td>
+                <td class="txt-center">Jakarta Server Pages</td>
+                <td class="txt-center">1999</td>
+                <td class="txt-center" title="Aller sur le site de JSP">
+                    <a href="https://eclipse.ee4j.org/jsp" target="_blank">eclipse.ee4j.org/jsp</a>
+                </td>
+                <td><code>out.print("Hello");</code></td>
+            </tr>
+            <tr>
+                <td class="txt-center" title="Logo ASP">
+                    <a href="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg" width="40" alt="ASP.NET">
+                    </a>
+                </td>
+                <td class="txt-center">ASP</td>
+                <td class="txt-center">Active Server Pages</td>
+                <td class="txt-center">1996</td>
+                <td class="txt-center" title="Aller sur le site de ASP.NET">
+                    <a href="https://dotnet.microsoft.com/apps/aspnet" target="_blank">asp.net</a>
+                </td>
+                <td><code>Response.Write("Hello")</code></td>
+            </tr>
+            <tr>
+                <td class="txt-center" title="Logo Ruby">
+                    <a href="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" width="35" alt="Ruby">
+                    </a>
+                </td>
+                <td class="txt-center">Ruby</td>
+                <td class="txt-center">Ruby</td>
+                <td class="txt-center">1995</td>
+                <td class="txt-center" title="Aller sur le site de Ruby">
+                    <a href="https://www.ruby-lang.org" target="_blank">ruby-lang.org</a>
+                </td>
+                <td><code>puts 'Hello'</code></td>
+            </tr>
+            <tr>
+                <td class="txt-center" title="Logo Perl">
+                    <a href="https://upload.wikimedia.org/wikipedia/en/5/56/Perl_language_logo.svg" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/5/56/Perl_language_logo.svg" width="40" alt="Perl">
+                    </a>
+                </td>
+                <td class="txt-center">Perl</td>
+                <td class="txt-center">Practical Extraction and Report Language</td>
+                <td class="txt-center">1987</td>
+                <td class="txt-center" title="Aller sur le site de Perl">
+                    <a href="https://www.perl.org" target="_blank">perl.org</a>
+                </td>
+                <td><code>print "Hello\n";</code></td>
+            </tr>
+            <tr>
+                <td class="txt-center" title="Logo Python">
+                    <a href="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="40" alt="Python">
+                    </a>
+                </td>
+                <td class="txt-center">Python</td>
+                <td class="txt-center">Python</td>
+                <td class="txt-center">1991</td>
+                <td class="txt-center" title="Aller sur le site de Python">
+                    <a href="https://www.python.org" target="_blank">python.org</a>
+                </td>
+                <td><code>print("Hello")</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Exercice 3</h2>
+    <table class="calendrier">
+        <caption>Avril 2024</caption>
+        <thead>
+            <tr>
+                <th class="table-header">Lu</th>
+                <th class="table-header">Ma</th>
+                <th class="table-header">Me</th>
+                <th class="table-header">Je</th>
+                <th class="table-header">Ve</th>
+                <th class="table-header">Sa</th>
+                <th class="table-header">Di</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+            </tr>
+            <tr>
+                <td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+            </tr>
+            <tr>
+                <td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+            </tr>
+            <tr>
+                <td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+            </tr>
+            <tr>
+                <td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
