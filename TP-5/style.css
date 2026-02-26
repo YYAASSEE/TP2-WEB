@@ -1,0 +1,82 @@
+body {
+    font-family: 'Calibri', Arial, sans-serif;
+    font-size: 13px;
+    color: #000;
+    background-color: #fff;
+    padding: 20px;
+}
+
+h2 {
+    background-color: #4A72C4;
+    color: white;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+th, td {
+    border: 1px solid #D9D9D9;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.txt-center { text-align: center; }
+.txt-white { color: white; }
+.bold { font-weight: bold; }
+
+.bg-dark-grey { background-color: #808080; }
+.bg-orange { background-color: #ED7D31; }
+.bg-blue { background-color: #5B9BD5; }
+.bg-green { background-color: #70AD47; }
+
+.bg-light-grey { background-color: #F2F2F2; }
+.bg-light-orange { background-color: #FCE4D6; }
+.bg-light-blue { background-color: #DDEBF7; }
+.bg-light-green { background-color: #E2EFDA; }
+
+.table-header { 
+    background-color: #4A72C4; 
+    color: white; 
+    font-weight: bold; 
+    text-align: center; 
+}
+
+img {
+    transition: transform 0.2s;
+}
+
+img:hover { 
+    cursor: pointer; 
+    transform: scale(1.1); 
+}
+
+code { 
+    background-color: #eee; 
+    padding: 2px 5px; 
+    font-family: monospace; 
+    color: #c7254e;
+}
+
+.calendrier {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.calendrier td, .calendrier th {
+    text-align: center;
+}
