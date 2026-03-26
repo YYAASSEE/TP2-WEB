@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoning 3</title>
+
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+  }
+
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .conteneur {
+    display: flex;
+    flex: 1;
+  }
+
+  .gauche {
+    background-color: #90ee90;
+    border: 1px solid #27ae60;
+    padding: 5px;
+    width: 50%;
+  }
+
+  .droite {
+    background-color: #9b59b6;
+    border: 1px solid #6c3483;
+    padding: 5px;
+    flex: 1;
+  }
+
+  .bas {
+    background-color: #f1c40f;
+    border: 1px solid #d4ac0d;
+    padding: 5px;
+    height: 40px;
+    width: 100%;
+  }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="conteneur">
+    <aside class="gauche">Gauche</aside>
+    <main class="droite">Droite</main>
+  </div>
+
+  <footer class="bas">Bas</footer>
+
+</body>
+</html>

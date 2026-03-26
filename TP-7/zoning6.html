@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zoning 6</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.zone-haut {
+  background-color: #5b6abf;
+  border: 1px solid #2c3e8c;
+  padding: 5px;
+  text-align: center;
+  height: 40px;
+  color: white;
+}
+
+.menu {
+  background-color: #f0a500;
+  border: 1px solid #d68910;
+  padding: 5px;
+  text-align: center;
+  height: 30px;
+}
+
+.grille {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex: 1;
+  gap: 4px;
+  padding: 4px;
+  background-color: #ecf0f1;
+}
+
+.pz {
+  background-color: #5b6abf;
+  border: 1px solid #2c3e8c;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pz-rouge {
+  background-color: #e74c3c;
+  border-color: #c0392b;
+}
+
+.zone-bas {
+  background-color: #bdc3c7;
+  border: 1px solid #95a5a6;
+  padding: 5px;
+  text-align: center;
+  height: 35px;
+}
+</style>
+
+</head>
+<body>
+
+<header class="zone-haut">Zone du Haut</header>
+<nav class="menu">Menu</nav>
+
+<main class="grille">
+  <div class="pz">PZ1</div>
+  <div class="pz">PZ2</div>
+  <div class="pz pz-rouge">PZ3</div>
+  <div class="pz">PZ6</div>
+  <div class="pz">PZ3</div>
+  <div class="pz">PZ4</div>
+  <div class="pz pz-rouge">PZ7</div>
+  <div class="pz">PZ8</div>
+  <div class="pz">PZ9</div>
+  <div class="pz">PZ10</div>
+  <div class="pz">PZ13</div>
+  <div class="pz">PZ14</div>
+  <div class="pz">PZ11</div>
+  <div class="pz">PZ12</div>
+  <div class="pz">PZ15</div>
+  <div class="pz">PZ16</div>
+</main>
+
+<footer class="zone-bas">Zone de Bas</footer>
+
+</body>
+</html>
+
